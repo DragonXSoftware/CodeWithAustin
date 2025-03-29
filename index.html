@@ -3,46 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code with Austin</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Learn coding from scratch with Code with Austin. Beginner-friendly Java courses with plans to expand to Python and more.">
+    <title>Code with Austin | Learn Programming from Scratch</title>
+    
+    <!-- CSS and Favicon (PNG version) -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Preconnect to external resources if needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Code with Austin | Learn Programming from Scratch">
+    <meta property="og:description" content="Beginner-friendly coding courses starting with Java.">
+    <meta property="og:image" content="https://yourdomain.com/logo.png">
+    <meta property="og:url" content="https://yourdomain.com">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Code with Austin Logo" id="logo">
-        <h1>Welcome to Code with Austin</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Skip navigation link for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Logo with PNG image -->
+            <div class="logo-container">
+                <a href="/" aria-label="Home">
+                    <img src="logo.png" alt="Code with Austin Logo" width="200" height="60" id="logo" loading="eager">
+                </a>
+            </div>
+            
+            <h1>Welcome to Code with Austin</h1>
+            
+            <!-- Mobile menu toggle -->
+            <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Navigation -->
+            <nav id="primary-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Code with Austin is dedicated to helping individuals learn coding from scratch. We start with Java and will expand to Python and other technologies as we grow.</p>
-    </section>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Start Your Coding Journey Today</h2>
+                <p>Learn Java programming from the ground up with our beginner-friendly courses</p>
+                <a href="#courses" class="cta-button">Explore Courses</a>
+            </div>
+            <div class="hero-image">
+                <img src="coding-hero.png" alt="Person coding on laptop" width="600" height="400" loading="lazy">
+            </div>
+        </section>
 
-    <section id="courses">
-        <h2>Our Courses</h2>
-        <article>
-            <h3>Java Programming for Beginners</h3>
-            <p>Kickstart your coding journey with our comprehensive Java course designed for beginners.</p>
-            <a href="courses/java.html" class="btn">Learn More</a>
-        </article>
-        <!-- Future courses can be added here -->
-    </section>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <h2>About Us</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Code with Austin is dedicated to helping individuals learn coding from scratch. We specialize in making complex programming concepts accessible to everyone.</p>
+                        <p>Our curriculum starts with Java and will expand to Python and other technologies as we grow. We focus on practical, project-based learning.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="about-image.png" alt="Austin teaching coding" width="500" height="350" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? Reach out to us at <a href="mailto:contact@codewithaustin.com">contact@codewithaustin.com</a>.</p>
-    </section>
+        <!-- Courses Section -->
+        <section id="courses" class="section courses-section">
+            <div class="section-container">
+                <h2>Our Courses</h2>
+                <div class="courses-grid">
+                    <article class="course-card">
+                        <div class="course-header">
+                            <img src="java-course.png" alt="Java Programming Course" width="300" height="200" loading="lazy">
+                            <h3>Java Programming for Beginners</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Master the fundamentals of Java programming with our comprehensive beginner course.</p>
+                            <ul>
+                                <li>40+ video lessons</li>
+                                <li>5 hands-on projects</li>
+                                <li>Certificate of completion</li>
+                            </ul>
+                        </div>
+                        <div class="course-footer">
+                            <a href="java.html" class="course-button">Course Details</a>
+                            <span class="price">$99.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="course-card coming-soon">
+                        <div class="course-header">
+                            <img src="python-coming-soon.png" alt="Python Course Coming Soon" width="300" height="200" loading="lazy">
+                            <h3>Python Fundamentals (Coming Soon)</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Our Python course will be launching later this year!</p>
+                            <button class="notify-button">Notify Me When Available</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Code with Austin. All rights reserved.</p>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Have questions about our courses? We'd love to hear from you!</p>
+                        <ul class="contact-methods">
+                            <li>
+                                <img src="email-icon.png" alt="Email" width="20" height="20">
+                                <a href="mailto:contact@codewithaustin.com">contact@codewithaustin.com</a>
+                            </li>
+                            <li>
+                                <img src="phone-icon.png" alt="Phone" width="20" height="20">
+                                <span>(555) 123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo-footer.png" alt="Code with Austin" width="150" height="45" loading="lazy">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="java.html">Java Programming</a></li>
+                        <li><a href="#coming-soon">Python (Coming Soon)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tutorials.html">Free Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Code with Austin. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/codewithaustin" aria-label="Twitter">
+                        <img src="twitter-icon.png" alt="Twitter" width="24" height="24">
+                    </a>
+                    <a href="https://youtube.com/codewithaustin" aria-label="YouTube">
+                        <img src="youtube-icon.png" alt="YouTube" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
